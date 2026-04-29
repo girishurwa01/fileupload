@@ -20,6 +20,8 @@ public class CandidateController {
          return service.save(candidate);
     }
 
+
+
     @GetMapping
     public List<Candidate> getAll(){
          return service.getAll();

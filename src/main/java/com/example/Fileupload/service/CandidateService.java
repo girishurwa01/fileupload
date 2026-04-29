@@ -23,4 +23,5 @@ public class CandidateService {
         return repository.findAll();
     }
 
+
 }

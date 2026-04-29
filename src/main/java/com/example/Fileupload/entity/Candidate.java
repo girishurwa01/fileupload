@@ -11,6 +11,8 @@ public class Candidate {
     private Long id;
     private String empName;
     private String empRole;
+    private String fileName;
+    private String filePath;
 
     public Long getId() {
         return id;
@@ -22,6 +24,14 @@ public class Candidate {
 
     public String getEmpRole() {
         return empRole;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public String getFilePath() {
+        return filePath;
     }
 
     public void setEmpName(String empName) {
@@ -36,6 +46,14 @@ public class Candidate {
         this.id = id;
     }
 
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
 }
 
 
