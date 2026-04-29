@@ -1,6 +1,7 @@
 package com.example.Fileupload.service;
 
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -9,6 +10,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.UUID;
 
+@Service
 public class FileStorageService {
 
     private  final String uploadDir = "uploads/";
