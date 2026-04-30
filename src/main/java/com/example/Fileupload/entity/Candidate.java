@@ -2,15 +2,22 @@ package com.example.Fileupload.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Candidate {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank(message = "Name is required")
     private String empName;
+
+    @NotBlank(message = "Role is required")
     private String empRole;
+
     private String fileName;
     private String filePath;
 

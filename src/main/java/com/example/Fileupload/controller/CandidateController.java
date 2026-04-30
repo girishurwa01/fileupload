@@ -2,6 +2,7 @@ package com.example.Fileupload.controller;
 
 import com.example.Fileupload.entity.Candidate;
 import com.example.Fileupload.service.CandidateService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,11 +17,9 @@ public class CandidateController {
     }
 
     @PostMapping
-    public Candidate create(@RequestBody Candidate candidate){
+    public Candidate create(@Valid @RequestBody Candidate candidate){
          return service.save(candidate);
     }
-
-
 
     @GetMapping
     public List<Candidate> getAll(){
