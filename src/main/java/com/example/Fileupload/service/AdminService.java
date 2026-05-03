@@ -22,5 +22,3 @@ public Admin save(Admin admin){
     }
 
 }
-
-yoyoyoyoyoy
